@@ -1,0 +1,1 @@
+cat ${scriptDir}/${API_DIR}/target/logs/* | grep -E 'Exception|exception|error|Error'|awk '!a[$0]++{print}'
