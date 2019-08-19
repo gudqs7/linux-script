@@ -9,7 +9,7 @@ echo $NOW
 echo $NOWTIME
 
 mkdir -p ~/code-version/$NOWMONTH
-mv target/logs/mountain.log.$NOW target/logs/mountain.log.$NOWTIME
+mv target/logs/gudqs.log.$NOW target/logs/gudqs.log.$NOWTIME
 cp target/${JAR_NAME}.jar ~/code-version/$NOWMONTH/${JAR_NAME}-$NOWTIME.jar
 cp target/${JAR_NAME}.conf ~/code-version/$NOWMONTH/${JAR_NAME}-$NOWTIME.conf
 
