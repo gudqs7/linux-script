@@ -8,6 +8,7 @@ git pull
 mvn clean install
 
 ln -s ${scriptDir}/${API_DIR}/target/${JAR_NAME}.jar /etc/init.d/${JAR_NAME}
+ln -s ${scriptDir}/${API_DIR}/target/logs ${scriptDir}/logs
 
 ls -l /etc/init.d/${JAR_NAME}
 
