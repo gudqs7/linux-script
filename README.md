@@ -26,7 +26,7 @@ LANG=en_US.utf8
 scriptDir=/root/project-script
 API_DIR=xxx-api
 ADMIN_DIR=xxx-admin
-JAR_NAME=xxx
+JAR_NAME=xxx-api
 EOF
 ```
 
@@ -41,7 +41,7 @@ EOF
 若不携带参数, 则默认为 JAR_NAME, 请确保 `JAR_NAME` 与  `server.servlet.context-path` 相同  
 另外, 需配置 ssl 时, 将crt 和key 文件放到  `/etc/nginx/cert/` 下, 并都重命名为 `server.servlet.context-path` 的值
 ```
-cd nginx
+cd admin
 ./copy.sh
 ``` 
 
