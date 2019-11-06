@@ -2,7 +2,7 @@ apiName=$1
 
 if [ $# -eq 0 ]
 then
-  apiName=${API_DIR}
+  apiName=${JAR_NAME}
 fi
 
 nginxConfDir=$2

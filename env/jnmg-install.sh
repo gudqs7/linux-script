@@ -33,3 +33,5 @@ else
     v=`cat /proc/version`
     echo "Unknown Linux Release: ${v}"
 fi
+systemctl enable nginx
+systemctl start nginx
