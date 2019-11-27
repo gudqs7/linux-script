@@ -3,5 +3,8 @@ cd ${scriptDir}
 
 cd ${ADMIN_DIR}
 
-git pull
+BR='master'
+
+git checkout $BR
+git pull origin $BR
 
