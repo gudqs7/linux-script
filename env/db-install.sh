@@ -31,6 +31,7 @@ if [[ x"${release}" == x"centos" ]]; then
     yum install -y perl wget epel-release
     curl -LO http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
     sudo yum localinstall -y mysql57-community-release-el7-11.noarch.rpm
+    rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
     sudo yum install -y mysql-community-server
     sudo systemctl enable mysqld
     sudo systemctl restart mysqld
